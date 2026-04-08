@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "javac": true,
+        "java": true
+    },
+    "java.import.maven.enabled": true,
+    "java.configuration.updateBuildConfiguration": "automatic"
+}
