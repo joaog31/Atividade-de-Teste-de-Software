@@ -24,7 +24,12 @@ public class LutaDeDadosTest {
 
 	@Test
 	void testeDanoNoTurno() {
-		luta = new LutaDeDados(new DadoFixo(6), 250, 250);
+		luta = new LutaDeDados(new Random() {
+			@Override
+			public int nextInt(int origin, int bound) {
+				return 6;
+			}
+		}, 250, 250);
 
 		luta.turno(10, 20);
 
@@ -34,21 +39,36 @@ public class LutaDeDadosTest {
 
 	@Test
 	void testeVitoriaJogador1() {
-		luta = new LutaDeDados(new DadoFixo(1), 10, 0);
+		luta = new LutaDeDados(new Random() {
+			@Override
+			public int nextInt(int origin, int bound) {
+				return 1;
+			}
+		}, 10, 0);
 
 		assertEquals("O jogador 1 Venceu!\r", luta.verificarVencedor());
 	}
 
 	@Test
 	void testeDerrotaJogador1() {
-		luta = new LutaDeDados(new DadoFixo(1), 0, 10);
+		luta = new LutaDeDados(new Random() {
+			@Override
+			public int nextInt(int origin, int bound) {
+				return 1;
+			}
+		}, 0, 10);
 
 		assertEquals("O jogador 2 Venceu!\r", luta.verificarVencedor());
 	}
 
 	@Test
 	void testeEmpate() {
-		luta = new LutaDeDados(new DadoFixo(1), 0, -5);
+		luta = new LutaDeDados(new Random() {
+			@Override
+			public int nextInt(int origin, int bound) {
+				return 1;
+			}
+		}, 0, -5);
 
 		assertEquals("É um empate!\r", luta.verificarVencedor());
 	}
@@ -60,26 +80,16 @@ public class LutaDeDadosTest {
 
 	@Test
 	void testeMetodoLancarDadosPorComportamentoDoTurno() {
-		luta = new LutaDeDados(new DadoFixo(6), 250, 250);
+		luta = new LutaDeDados(new Random() {
+			@Override
+			public int nextInt(int origin, int bound) {
+				return 6;
+			}
+		}, 250, 250);
 
 		luta.turno(0, 0);
 
 		assertEquals(244, luta.getJogador1Vida());
 		assertEquals(244, luta.getJogador2Vida());
-	}
-
-	private static class DadoFixo extends Random {
-
-		private static final long serialVersionUID = 1L;
-		private final int valor;
-
-		DadoFixo(int valor) {
-			this.valor = valor;
-		}
-
-		@Override
-		public int nextInt(int origin, int bound) {
-			return valor;
-		}
 	}
 }
