@@ -1,2 +1,3 @@
-application\Program.class
 br\com\meujogo\LutaDeDados.class
+br\com\meujogo\LutaDeDadosTest$DadoFixo.class
+br\com\meujogo\LutaDeDadosTest.class
