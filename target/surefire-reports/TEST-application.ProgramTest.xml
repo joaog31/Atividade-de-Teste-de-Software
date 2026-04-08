@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="br.com.meujogo.LutaDeDadosTest" time="0.022" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="application.ProgramTest" time="0.06" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -59,11 +59,108 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="testeVitoriaJogador1" classname="br.com.meujogo.LutaDeDadosTest" time="0.003"/>
-  <testcase name="testeDerrotaJogador1" classname="br.com.meujogo.LutaDeDadosTest" time="0.001"/>
-  <testcase name="testeEmpate" classname="br.com.meujogo.LutaDeDadosTest" time="0.001"/>
-  <testcase name="testeJogoEmAndamento" classname="br.com.meujogo.LutaDeDadosTest" time="0.001"/>
-  <testcase name="testeDanoNoTurno" classname="br.com.meujogo.LutaDeDadosTest" time="0.001"/>
-  <testcase name="testeInicializacao" classname="br.com.meujogo.LutaDeDadosTest" time="0.003"/>
-  <testcase name="testeMetodoLancarDadosPorComportamentoDoTurno" classname="br.com.meujogo.LutaDeDadosTest" time="0.001"/>
+  <testcase name="mainDeveExecutarSemExcecao" classname="application.ProgramTest" time="0.042">
+    <system-err><![CDATA[abr. 08, 2026 5:20:06 PM application.Program main
+INFO: jogo começou!
+
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: Jogador 1 causou: 16  de dano.
+Jogador 2 causou: 20 de dano.
+Vida atual do jogador1: 230
+Vida atual do jogador2: 234
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: E o jogo continua...
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: Jogador 1 causou: 17  de dano.
+Jogador 2 causou: 19 de dano.
+Vida atual do jogador1: 211
+Vida atual do jogador2: 217
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: E o jogo continua...
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: Jogador 1 causou: 18  de dano.
+Jogador 2 causou: 17 de dano.
+Vida atual do jogador1: 194
+Vida atual do jogador2: 199
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: E o jogo continua...
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: Jogador 1 causou: 20  de dano.
+Jogador 2 causou: 17 de dano.
+Vida atual do jogador1: 177
+Vida atual do jogador2: 179
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: E o jogo continua...
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: Jogador 1 causou: 19  de dano.
+Jogador 2 causou: 21 de dano.
+Vida atual do jogador1: 156
+Vida atual do jogador2: 160
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: E o jogo continua...
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: Jogador 1 causou: 19  de dano.
+Jogador 2 causou: 19 de dano.
+Vida atual do jogador1: 137
+Vida atual do jogador2: 141
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: E o jogo continua...
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: Jogador 1 causou: 20  de dano.
+Jogador 2 causou: 17 de dano.
+Vida atual do jogador1: 120
+Vida atual do jogador2: 121
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: E o jogo continua...
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: Jogador 1 causou: 21  de dano.
+Jogador 2 causou: 16 de dano.
+Vida atual do jogador1: 104
+Vida atual do jogador2: 100
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: E o jogo continua...
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: Jogador 1 causou: 16  de dano.
+Jogador 2 causou: 18 de dano.
+Vida atual do jogador1: 86
+Vida atual do jogador2: 84
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: E o jogo continua...
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: Jogador 1 causou: 20  de dano.
+Jogador 2 causou: 19 de dano.
+Vida atual do jogador1: 67
+Vida atual do jogador2: 64
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: E o jogo continua...
+abr. 08, 2026 5:20:06 PM application.Program main
+INFO: Jogador 1 causou: 16  de dano.
+Jogador 2 causou: 16 de dano.
+Vida atual do jogador1: 51
+Vida atual do jogador2: 48
+abr. 08, 2026 5:20:07 PM application.Program main
+INFO: E o jogo continua...
+abr. 08, 2026 5:20:07 PM application.Program main
+INFO: Jogador 1 causou: 16  de dano.
+Jogador 2 causou: 20 de dano.
+Vida atual do jogador1: 31
+Vida atual do jogador2: 32
+abr. 08, 2026 5:20:07 PM application.Program main
+INFO: E o jogo continua...
+abr. 08, 2026 5:20:07 PM application.Program main
+INFO: Jogador 1 causou: 21  de dano.
+Jogador 2 causou: 18 de dano.
+Vida atual do jogador1: 13
+Vida atual do jogador2: 11
+abr. 08, 2026 5:20:07 PM application.Program main
+INFO: E o jogo continua...
+abr. 08, 2026 5:20:07 PM application.Program main
+INFO: Jogador 1 causou: 16  de dano.
+Jogador 2 causou: 17 de dano.
+Vida atual do jogador1: -4
+Vida atual do jogador2: -5
+abr. 08, 2026 5:20:07 PM application.Program main
+INFO: É um empate!
+]]></system-err>
+  </testcase>
 </testsuite>
