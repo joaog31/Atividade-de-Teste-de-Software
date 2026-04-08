@@ -7,7 +7,7 @@ import java.util.Random;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class LutaDeDadosTest {
+public class LutaDeDadosTest {
 
 	private LutaDeDados luta;
 
