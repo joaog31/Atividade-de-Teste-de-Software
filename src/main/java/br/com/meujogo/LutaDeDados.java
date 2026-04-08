@@ -1,13 +1,23 @@
 package br.com.meujogo;
 
+import java.util.Objects;
 import java.util.Random;
 
 public class LutaDeDados {
-	int jogador1Vida = 250;
-	int jogador2Vida = 250;
-	Random dado = new Random();
+	private int jogador1Vida;
+	private int jogador2Vida;
+	private final Random dado;
+
+	private static final int VIDA_INICIAL = 250;
 
 	public LutaDeDados() {
+		this(new Random(), VIDA_INICIAL, VIDA_INICIAL);
+	}
+
+	LutaDeDados(Random dado, int jogador1Vida, int jogador2Vida) {
+		this.dado = Objects.requireNonNull(dado, "dado nao pode ser nulo");
+		this.jogador1Vida = jogador1Vida;
+		this.jogador2Vida = jogador2Vida;
 	}
 
 	public int getJogador1Vida() {
